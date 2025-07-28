@@ -1,0 +1,30 @@
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+* {
+   /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    background-color:#ffffff;
+}
+
+h1 {
+    color: blue;
+    font-weight: 900;
+}
+
+ul {
+    font-size: 16pt
+}
+
+.image {
+    width: 500px;
+}

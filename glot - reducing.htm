@@ -1,0 +1,41 @@
+let a = [5,8,6,10,9];
+let max_value = (a,b) => a > b ? a : b;
+function max_sequence(x) {
+    let result = x[0];
+    for (let element of x) {
+        result = max_value(result, element);}
+        return result;
+}
+
+console.log(max_sequence(a));
+let min_value = (a,b) => a < b ? a : b;
+function min_sequence(x) {
+    let result = x[0];
+    for (let element of x) {
+        result = min_value(result, element);}
+        return result;
+}
+
+console.log(min_sequence(a));
+
+function reduce(x,fn) {
+    let result = x[0];
+    for (let element of x) {result = fn(result, element);}
+        return result;
+}
+console.log(reduce(a, max_value));
+console.log(reduce(a, min_value));
+let sum =(a,b) => a+b;
+function reduce1(x,fn, initial) {
+    let result = initial;
+    for (let element of x) {result = fn(result, element);}
+        return result;
+}
+console.log(reduce1(a,sum,0));
+
+//array reducing function
+let getSum= (total, num) => {
+    return total + Math.round(num);
+}
+const numbers = [15.5, 2.3, 1.1, 4.7];
+console.log(numbers.reduce(getSum, 0));

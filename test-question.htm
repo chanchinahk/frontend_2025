@@ -1,0 +1,62 @@
+<! doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/test-question.css"/>
+        <link rel="icon" href="./img/favicon.ico">
+    </head>
+    <body>
+        <h1>
+            Test Question
+        </h1>
+        <br>
+        <button type="button" class="button" onclick="window.open('http://www.google.com')">Next Article</button>
+        <br><br><h2>&lt;span&gt;</h2>
+        <br>
+        <div>
+            <span class="span">
+                A &lt;span&gt; element which is used to color a part of a text:
+            </span>
+            <br><span class="span">Definition and Usage
+                <br>The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document.
+
+                The &lt;span&gt; tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+
+                The &lt;span&gt; is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline element.
+            </span>
+        </div>
+        <br><br><h2>Font Weight</h2>
+        <p>
+            In CSS, the maximum <strong>font weight</strong> is 900. This value represents the heaviest, or boldest, weight available for most fonts. The font-weight property allows you to specify the thickness of text, with values ranging from 100 (lightest) to 900 (heaviest), in increments of 100. Keywords like "normal" (400) and "bold" (700) are also used, but <strong>font-weight</strong>: 900 provides the maximum visual weight. 
+            <br><br>Here's a more detailed explanation:
+            <br><br><b>Numeric Values:</b>
+            <br>The <strong>font-weight</strong> property accepts numeric values from 100 to 900, corresponding to different levels of boldness. 
+            <br><br><b>Maximum Weight:</b>
+            <br>900 is the highest numeric value and represents the thickest possible stroke for most fonts. 
+            <br><br><b>Keywords:</b>
+            <br>"normal" is equivalent to 400, and "bold" is equivalent to 700. "bolder" and "lighter" keywords adjust the weight relative to the parent element's weight. 
+            <br><br><b>Variable Fonts:</b>
+            <br>Variable fonts can have even finer control over font weight, potentially allowing values beyond 900 (e.g., up to 1000), but 900 is the maximum for standard, non-variable fonts. 
+        </p>
+        <div class="contact">
+            <h1>Contact Me</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter Name" id="name" name="name" minlength="5" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Email" id="email" name="email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Enter Message" id="message" name="message"/>
+                    </textarea>
+                </div>
+                <button type="submit">submit</button》
+                <input type="submit" value="submit" />
+            </form>
+        </div>
+    </body>
+</html>
