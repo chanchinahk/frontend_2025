@@ -1,0 +1,36 @@
+.container {
+  grid-template-rows: 50px 50px 1fr 50px;
+  grid-template-areas:
+  "header header header"
+  "nav nav search"
+  "main main aside"
+  "main main aside"
+  "main main aside"
+  "main main aside"
+  "main main aside"
+  "main main aside"
+  "footer footer footer"
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: 
+    "header"
+    "search"
+    "aside"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "footer";
+  }
+  nav {
+    display: none;
+  }
+}
